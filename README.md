@@ -13,7 +13,7 @@ Users can subscribe, get authorization through JWT-tokens, get information about
 
 MAIN FRAMEWORKS
 
-Django
+Django,
 Django REST Framework
 
 =================================
