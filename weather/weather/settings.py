@@ -23,8 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-wh6=197&83pora-' \
-             'x1kft71&tj3wl^79+9^@eq+myf0d-h$0x4_'
+SECRET_KEY = '**********'
 WEATHER_PASS_KEY = os.getenv('WEATHER_PASS_KEY')
 
 
@@ -159,13 +158,11 @@ REST_FRAMEWORK = {
 
 """To check web link: heroku config:get REDIS_URL -a weatherreminder001"""
 
-CELERY_BROKER_URL = 'redis://:p20f3b20b5d7380e0c184d06dbf7b99d6febbc8c655c' \
-                    'e9ef2a2ce4bd1898acb9e@ec2-52-55-155-215.compute-1.ama' \
-                    'zonaws.com:30639'
+CELERY_BROKER_URL = '***************************************'
 CELERY_RESULT_BACKEND = 'django-db'
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
-CELERY_TIMEZONE = 'Europe/Kiev'
+CELERY_TIMEZONE = 'Europe'
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
